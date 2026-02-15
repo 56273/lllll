@@ -18,7 +18,7 @@ import time
 import google.generativeai as genai
 
 # 🔴🔴🔴 填入你的 API KEY 🔴🔴🔴
-API_KEY = "AIzaSyDTaMGYCv1VIS3zvKeH7DI8HhiKqGRi6IE"
+API_KEY = ""
 
 # 🌐 代理设置 (如果需要)
 # os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7890'
@@ -159,4 +159,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
