@@ -47,16 +47,16 @@ PROVIDER_CONFIGS = {
         "api_url": "https://openrouter.ai/api/v1/chat/completions",
         "format": "openai",
         "models": [
-            "google/gemini-2.5-flash-preview",
+            "google/gemini-2.5-flash",
+            "google/gemini-2.5-flash-lite",
             "google/gemini-2.5-pro-preview",
-            "google/gemini-2.0-flash-001",
             "openai/gpt-4.1-mini",
             "openai/gpt-4.1",
             "openai/gpt-4o-mini",
             "openai/gpt-4o",
-            "anthropic/claude-sonnet-4",
-            "anthropic/claude-haiku-4",
-            "deepseek/deepseek-chat-v3-0324",
+            "anthropic/claude-sonnet-4-5",
+            "anthropic/claude-haiku-4-5",
+            "deepseek/deepseek-chat",
             "qwen/qwen-2.5-72b-instruct",
             "x-ai/grok-3-mini-beta",
         ]
@@ -67,17 +67,19 @@ PROVIDER_CONFIGS = {
         "models": [
             "deepseek-ai/DeepSeek-V3",
             "deepseek-ai/DeepSeek-R1",
+            "THUDM/GLM-5",
+            "moonshotai/Kimi-K2.5",
             "Qwen/Qwen2.5-72B-Instruct",
             "Qwen/Qwen2.5-7B-Instruct",
-            "THUDM/glm-4-9b-chat",
-            "meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "meta-llama/Llama-3.1-8B-Instruct",
         ]
     },
     "Gemini (Google)": {
         "api_url": "gemini_sdk",
         "format": "gemini",
         "models": [
-            "gemini-2.5-flash-preview-05-20",
+            "gemini-2.5-flash",
+            "gemini-2.5-flash-lite",
             "gemini-2.5-pro-preview-05-06",
             "gemini-2.0-flash",
             "gemini-2.0-flash-lite",
@@ -89,9 +91,11 @@ PROVIDER_CONFIGS = {
         "models": [
             "gpt-4.1-mini",
             "gpt-4.1",
+            "gpt-4.1-nano",
             "gpt-4o-mini",
             "gpt-4o",
             "o4-mini",
+            "o3-mini",
         ]
     },
     "Claude (Anthropic)": {
@@ -100,6 +104,7 @@ PROVIDER_CONFIGS = {
         "models": [
             "claude-sonnet-4-5-20250929",
             "claude-haiku-4-5-20251001",
+            "claude-opus-4-5-20251101",
         ]
     },
     "DeepSeek": {
@@ -114,6 +119,8 @@ PROVIDER_CONFIGS = {
         "api_url": "https://api.moonshot.cn/v1/chat/completions",
         "format": "openai",
         "models": [
+            "kimi-k2.5",
+            "kimi-k2-turbo-preview",
             "moonshot-v1-auto",
             "moonshot-v1-128k",
         ]
@@ -125,6 +132,8 @@ PROVIDER_CONFIGS = {
             "qwen-max",
             "qwen-plus",
             "qwen-turbo",
+            "qwq-plus",
+            "qwen3-max",
         ]
     },
     "Grok (xAI)": {
@@ -133,15 +142,17 @@ PROVIDER_CONFIGS = {
         "models": [
             "grok-3-mini-beta",
             "grok-3-beta",
+            "grok-4-1-fast",
         ]
     },
     "智谱 (Zhipu)": {
         "api_url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
         "format": "openai",
         "models": [
+            "glm-4.7",
+            "glm-4.5-flash",
             "glm-4-plus",
             "glm-4-flash",
-            "glm-4-long",
         ]
     },
 }
